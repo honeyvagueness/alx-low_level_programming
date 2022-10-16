@@ -2,24 +2,42 @@
 
 /**
  *main-program entry point.
- *Return:0 success, non zero error.
+ *Return:0 success, non zero fail
  */
 
 int main(void)
 
 {
 
-int num;
+int i, k = '0', j;
 
-
-
-for (num = '0'; num <= '9'; num++)
+for (i = '0'; i <= '9'; i++)
 
 {
 
-putchar(num);
+for (j = k; j <= '9'; j++)
 
-if (num == '9')
+{
+
+if (i != j)
+
+{
+
+putchar(i);
+
+putchar(j);
+
+}
+
+if (i == j)
+
+{
+
+continue;
+
+}
+
+if (i == '8' && j == '9')
 
 {
 
@@ -36,6 +54,10 @@ putchar(',');
 putchar(' ');
 
 }
+
+}
+
+k++;
 
 }
 

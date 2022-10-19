@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - prints all alphabet in lowercase
- * Return; on success 1
+ * print_alphabet - prints all alphabets in lowercase.
+ * Return: On success 1.
  */
-
 void print_alphabet(void)
 {
-int cla = 97;
-int davi = 122;
-int ore = '\n';
-while (cla >= davi)
+int all = 97;
+int pall = 122;
+int mart = '\n';
+while (all <= pall)
 {
-putchar(cla);
-cla++;
+putchar(all);
+all++;
 }
-putchar(ore);
+putchar(mart);
 }
